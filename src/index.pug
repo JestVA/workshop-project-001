@@ -1,20 +1,19 @@
 doctype html
-html(lang="en")
+html
   head
-    title Welcome to Pug Starter
-    meta(content="Simple pug (jade) starter aimed to quickly deliver HTML & CSS projects" name="description")
-    //- this checks to see the the "embed" property is set to "true"
-    //- in the package.json file
-    if config.entry.css.embed
-      link(rel="stylesheet" href=`${embedPath}` inline)
+    title Dorin Dumitrascuta - Web Developer
+    link(href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet")
+    link(href="style.css" rel="stylesheet" type="text/css")
   body
-    h1 Welcome to pug-starter! #{config.lang} :)
-    p This is a barebone setup.
-    p You are currently on master branch.
-    p If you want to see a full example of what pug starter offers out of the box use:
-    p 
-      b git checkout example
-//- The style.css is at the bottom so it doesn't
-//- block the loading of assets
-if config.entry.css.external
-  link(rel="stylesheet", href=`${baseUrl}/style.css`)
+    main
+      h1 Dorin Dumitrascuta - Front End Designer
+      .hero
+        .image
+      hr
+      h2 Experience
+      ul
+        li 2017 - 2018 Digital Product Manager
+        li 2017 Assistant Producer, game development
+        li 2018 - Junior Web Developer, BitBee
+      h2 Personal Statement
+      p Darling, you're in London. WEBDEV?
